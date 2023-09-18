@@ -4,22 +4,22 @@ const btn = document.querySelectorAll(".sc");
 
 let currentPlayer = 1;
 
-play.addEventListener("onClick", startGame);
+play.addEventListener("click", startGame);
 
-function startGame(){
-    btn.forEach((element,index) => {
-        element.addEventListener("onclick",()=>{
+function startGame() {
+    btn.forEach((element, index) => {
+        element.addEventListener("click", () => {
             if (currentPlayer == 1) {
-                this.innerHTML = "X";
+                btn[index].innerHTML = "X";
                 currentPlayer = 2;
             }
             else {
-                this.innerHTML = "O";
+                btn[index].innerHTML = "O";
                 currentPlayer = 1;
             }
         })
     });
 }
 
-    
+
 

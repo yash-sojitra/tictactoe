@@ -1,6 +1,6 @@
 const play = document.querySelector("#play");
 
-const btn = document.querySelectorAll(".gameBtn");
+const btn = document.querySelectorAll(".sc");
 
 let currentPlayer = 1;
 
